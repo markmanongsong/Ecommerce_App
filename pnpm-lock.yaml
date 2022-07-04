@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@tailwindcss/line-clamp': ^0.3.1
@@ -20,7 +20,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-icons: 4.3.1_react@17.0.2
   react-loading-skeleton: 3.1.0_react@17.0.2
-  react-router-dom: 6.3.0_react-dom@17.0.2+react@17.0.2
+  react-router-dom: 6.3.0_sfoxds7t5ydpegc3knd667wn6m
 
 devDependencies:
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@3.0.23
@@ -201,6 +201,8 @@ packages:
     resolution: {integrity: sha512-vqUSBLP8dQHFPdPi9bc5GK9vRkYHJ49fsZdtoJ8EQ8ibpwk5rPKfvNIwChB0KVXcIjcepEBBd2VHC5r9Gy8ueg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.17.0
     dev: true
 
   /@babel/plugin-syntax-jsx/7.16.7_@babel+core@7.17.9:
@@ -1180,7 +1182,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom/6.3.0_react-dom@17.0.2+react@17.0.2:
+  /react-router-dom/6.3.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==}
     peerDependencies:
       react: '>=16.8'
