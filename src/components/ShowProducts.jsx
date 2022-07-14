@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Button from '../components/Button';
-import { useState, useEffect } from 'react';
+import { CartContext } from '../context/CartProvider';
 
 const ShowProducts = ({
   id,
@@ -10,8 +10,8 @@ const ShowProducts = ({
   price,
   description,
 }) => {
-  const [cartItems, setCartItems] = useState([]);
-  const addToBag = ({ id, productName, price, imageUrl, category }) => {
+  const { cartItems, setCartItems } = useContext(CartContext);
+  const addToBag = (id, productName, price, imageUrl, category) => {
     // console.log('adding to bag: ', id, ' ', productName);
     setCartItems([
       ...cartItems,
@@ -46,7 +46,7 @@ const ShowProducts = ({
         <Button
           onClick={() => {
             // console.log('onclick button: ', id);
-            addToBag(id, title, price, imageUrl, category);
+            addToBag({ id, title, price, imageUrl, category });
           }}
         >
           Add to bag

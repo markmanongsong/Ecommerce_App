@@ -1,13 +1,14 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import ProductItem from '../components/ProductItem';
+import { CartContext } from '../context/CartProvider';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState('All');
   const [showProduct, setShowProduct] = useState([]);
-  const [cartItems, setCartItems] = useState([]);
+  const { cartItems, setCartItems } = useContext(CartContext);
 
   const fetchAllProducts = async () => {
     const { data } = await axios.get('https://fakestoreapi.com/products/');
