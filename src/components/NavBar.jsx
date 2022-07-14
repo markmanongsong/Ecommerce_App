@@ -22,7 +22,7 @@ const NavBar = () => {
         </li>
         <li className="px-4 cursor-pointer hover:border-b-4">About</li>
         <li className="px-4 cursor-pointer hover:border-b-4">Contact</li>
-        <Link to={'/Cart'}>
+        <Link to={'/cart'}>
           <li className="bg-white text-black hover:bg-slate-500  hover:text-white px-4 rounded-full cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const NavBar = () => {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               />
             </svg>
-            Cart (0)
+            Cart
           </li>
         </Link>
       </ul>
@@ -64,7 +64,7 @@ const NavBar = () => {
         </li>
         <li className="py-6 text-4xl hover:border-b-4">About</li>
         <li className="py-6 text-4xl hover:border-b-4">Contact</li>
-        <Link to={'/Cart'}>
+        <Link to={'/cart'}>
           <li className="bg-white text-black hover:bg-slate-500  hover:text-white px-4 rounded-full cursor-pointer py-6 text-4xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const NavBar = () => {
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               />
             </svg>
-            Cart (0)
+            Cart
           </li>
         </Link>
       </ul>

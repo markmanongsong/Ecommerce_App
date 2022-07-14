@@ -11,7 +11,7 @@ const ShowProducts = ({
   description,
 }) => {
   const [cartItems, setCartItems] = useState([]);
-  const addToBag = (id, productName, price, imageUrl, category) => {
+  const addToBag = ({ id, productName, price, imageUrl, category }) => {
     // console.log('adding to bag: ', id, ' ', productName);
     setCartItems([
       ...cartItems,
@@ -46,7 +46,7 @@ const ShowProducts = ({
         <Button
           onClick={() => {
             // console.log('onclick button: ', id);
-            addToBag({ id, title, price, imageUrl, category });
+            addToBag(id, title, price, imageUrl, category);
           }}
         >
           Add to bag

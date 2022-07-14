@@ -49,7 +49,7 @@ const ProductList = () => {
   };
 
   useEffect(() => {
-    // console.log('updating cartitems on localstorage', cartItems);
+    console.log('updating cartitems on localstorage', cartItems);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
@@ -60,7 +60,7 @@ const ProductList = () => {
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center bg-black hover:bg-slate-500  hover:text-white"
             onClick={() => {
-              // console.log(products);
+              console.log(products);
               setCategory('All');
             }}
           >
@@ -69,7 +69,7 @@ const ProductList = () => {
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center bg-black hover:bg-slate-500  hover:text-white"
             onClick={() => {
-              // console.log(`men's clothin`);
+              console.log(`men's clothin`);
               setCategory("men's clothing");
             }}
           >
@@ -78,7 +78,7 @@ const ProductList = () => {
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center bg-black hover:bg-slate-500  hover:text-white"
             onClick={() => {
-              // console.log(`women's cloathing`);
+              console.log(`women's cloathing`);
               setCategory("women's clothing");
             }}
           >
@@ -87,7 +87,7 @@ const ProductList = () => {
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center bg-black hover:bg-slate-500  hover:text-white"
             onClick={() => {
-              // console.log(`jewelery`);
+              console.log(`jewelery`);
               setCategory('jewelery');
             }}
           >
@@ -96,7 +96,7 @@ const ProductList = () => {
           <button
             className="text-white group border-2 px-6 py-3 my-2 flex items-center bg-black hover:bg-slate-500  hover:text-white"
             onClick={() => {
-              // console.log(`electronics`);
+              console.log(`electronics`);
               setCategory('electronics');
             }}
           >
