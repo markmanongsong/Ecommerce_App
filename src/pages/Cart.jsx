@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartItem from '../components/CartItem';
+import { CartContext } from '../context/CartProvider';
 
 const Cart = () => {
-  const storedCart = () => JSON.parse(window.localStorage.getItem('cartItems'));
+  // const storedCart = () => JSON.parse(window.localStorage.getItem('cartItems'));
   // console.log(storedCart[0].id.id);
+  const { cartItems, setCartItems } = useContext(CartContext);
 
   return (
     <main className="relative ">
@@ -13,7 +15,7 @@ const Cart = () => {
       </div>
 
       <div className="absolute top-60">
-        {storedCart().map((itemObject) => (
+        {cartItems.map((itemObject) => (
           <CartItem itemObject={itemObject} />
         ))}
 

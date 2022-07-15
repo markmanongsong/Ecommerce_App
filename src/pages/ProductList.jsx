@@ -41,7 +41,7 @@ const ProductList = () => {
     filterProducts();
   }, [category]);
 
-  const addtoBag = (id, productName, price, imageUrl, category) => {
+  const addtoBag = ({ id, productName, price, imageUrl, category }) => {
     // console.log('adding to bag: ', id, ' ', productName);
     setCartItems([
       ...cartItems,

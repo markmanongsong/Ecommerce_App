@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CartItem = ({ itemObject }) => {
-  const { imageUrl, title, category, price } = itemObject.id;
+  const { imageUrl, title, category, price } = itemObject;
   return (
     <div className="flex flex-col max-w-3xl p-6 space-y-4 lg: justify-center items-center sm:p-10 border-b-4 border-black ">
       <div className="flex w-full space-x-2 sm:space-x-4">

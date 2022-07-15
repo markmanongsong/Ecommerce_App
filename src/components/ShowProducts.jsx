@@ -11,7 +11,7 @@ const ShowProducts = ({
   description,
 }) => {
   const { cartItems, setCartItems } = useContext(CartContext);
-  const addToBag = (id, productName, price, imageUrl, category) => {
+  const addToBag = ({ id, productName, price, imageUrl, category }) => {
     // console.log('adding to bag: ', id, ' ', productName);
     setCartItems([
       ...cartItems,
