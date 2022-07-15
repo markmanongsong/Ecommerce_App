@@ -16,7 +16,7 @@ ReactDOM.render(
     <CartProvider>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/ecommerce-app" element={<Home />} />
         <Route path="/products/" element={<ProductList />} />
         {/* <Route path="/product/:productId" element={<ProductPage />} /> */}
         <Route path="/products/product/:productId" element={<ProductPage />} />

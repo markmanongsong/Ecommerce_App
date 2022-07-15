@@ -15,7 +15,7 @@ const NavBar = () => {
 
       <ul className="hidden md:flex ">
         <li className="px-4 cursor-pointer hover:border-b-4">
-          <Link to="/">Home</Link>
+          <Link to="/ecommerce-app">Home</Link>
         </li>
         <li className="px-4 cursor-pointer hover:border-b-4">
           <Link to="/products/">Products</Link>
@@ -57,7 +57,7 @@ const NavBar = () => {
         }
       >
         <li className="py-6 text-4xl hover:border-b-4">
-          <Link to="/">Home</Link>
+          <Link to="/ecommerce-app">Home</Link>
         </li>
         <li className="py-6 text-4xl hover:border-b-4">
           <Link to="/products/">Products</Link>

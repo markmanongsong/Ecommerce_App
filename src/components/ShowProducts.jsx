@@ -20,7 +20,7 @@ const ShowProducts = ({
   };
 
   useEffect(() => {
-    console.log('updating cartitems on localstorage', cartItems);
+    // console.log('updating cartitems on localstorage', cartItems);
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
